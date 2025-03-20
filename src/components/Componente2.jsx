@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Componente2 = ({propiedad}) => {
+export const Componente2 = () => {
     return (
         <div>
             <h2>Componente 2</h2>
@@ -10,7 +10,6 @@ export const Componente2 = ({propiedad}) => {
                 <li>Chile</li>
                 <li>Peru</li>
             </ul>
-            <h3>{propiedad}</h3>
         </div>
     )
 }
