@@ -1,6 +1,5 @@
 import {ShoppingCartOutlined} from '@ant-design/icons';
 
-
 const CartWidget = () => {
     return (
         <div>

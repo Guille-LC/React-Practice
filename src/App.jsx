@@ -12,7 +12,7 @@ function App() {
     <>
       <div className='head'>
         <img src="../img/pngfind.com-green-day-logo-png-6068960.png" alt="Sweet Merch" className='logo'/>
-        <h1>Sweet Merch</h1>
+        <h1>SWEET MERCH</h1>
       </div>
         <Navbar />
         <ItemListContainer greeting="¡Bienvenido a Sweet Merch!"/>
