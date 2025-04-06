@@ -1,0 +1,13 @@
+.card {
+    width: 550px;
+    height: 550px;
+    border-radius: 5px;
+    border-color: aliceblue;
+    border-style: groove;
+    text-align: center;
+}
+
+.card-img{
+    width: 350px;
+    height: 350px;
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "remera hombre 1",
+        "description": "remera hombre XL",
+        "stock": true,
+        "price": 5000
+    },
+    {
+        "id": 2,
+        "nombre": "remera hombre 2",
+        "description": "remera hombre XXL",
+        "stock": true,
+        "price": 5500
+    },
+    {
+        "id": 3,
+        "nombre": "remera mujer 1",
+        "description": "remera mujer XL",
+        "stock": true,
+        "price": 5000
+    },
+    {
+        "id": 4,
+        "nombre": "remera mujer 2",
+        "description": "remera mujer XXL",
+        "stock": true,
+        "price": 5500
+    },
+    {
+        "id": 5,
+        "nombre": "poster",
+        "description": "poster de pared",
+        "stock": true,
+        "price": 3000
+    },
+    {
+        "id": 6,
+        "nombre": "mochila",
+        "description": "mochila de cuero",
+        "stock": false,
+        "price": 4000
+    }
+]

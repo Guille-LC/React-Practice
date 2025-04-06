@@ -1,9 +1,8 @@
-import './components/Componente1'
-import './components/Componente2'
+import './components/ProductList'
+import './components/ItemCount'
 import './components/Navbar'
-import { Componente1 } from './components/Componente1'
-import { Componente2 } from './components/Componente2'
-import { Navbar } from './components/Navbar';
+import { ProductList } from './components/ProductList'
+import { Navbar } from './components/Navbar'
 import ItemListContainer from './components/ItemListContainer'
 
 
@@ -16,8 +15,7 @@ function App() {
       </div>
         <Navbar />
         <ItemListContainer greeting="¡Bienvenido a Sweet Merch!"/>
-        <Componente1 />
-        <Componente2 />
+        <ProductList />
     </>
   )
 }
