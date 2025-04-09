@@ -5,7 +5,7 @@ export const ItemCount = () => {
 
     return (
         <div>
-            <button onClick={() => setContador(contador+1)}>Sumar</button>
+            <button onClick={() => setContador(contador+1)}>Agregar al carrito</button>
         </div>
     )
 }
