@@ -1,13 +1,15 @@
 .card {
-    width: 550px;
-    height: 550px;
+    width: 400px;
+    height: 450px;
     border-radius: 5px;
     border-color: aliceblue;
     border-style: groove;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-img{
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
 }

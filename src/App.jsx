@@ -3,7 +3,7 @@ import './components/ItemCount'
 import './components/Navbar'
 import { ProductList } from './components/ProductList'
 import { Navbar } from './components/Navbar'
-import ItemListContainer from './components/ItemListContainer'
+import Greeting from './components/Greeting'
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <h1>SWEET MERCH</h1>
       </div>
         <Navbar />
-        <ItemListContainer greeting="¡Bienvenido a Sweet Merch!"/>
+        <Greeting greeting="¡Bienvenido a Sweet Merch!"/>
         <ProductList />
     </>
   )

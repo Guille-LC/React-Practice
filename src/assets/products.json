@@ -1,44 +1,50 @@
 [
     {
         "id": 1,
-        "nombre": "remera hombre 1",
-        "description": "remera hombre XL",
+        "nombre": "Remera hombre 1",
+        "description": "Remera hombre XL",
         "stock": true,
-        "price": 5000
+        "price": 5000,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_699190-MLA73372730264_122023-O.webp"
     },
     {
         "id": 2,
-        "nombre": "remera hombre 2",
-        "description": "remera hombre XXL",
+        "nombre": "Remera hombre 2",
+        "description": "Remera hombre XXL",
         "stock": true,
-        "price": 5500
+        "price": 5500,
+        "img": "https://www.kidvicious.co.uk/cdn/shop/files/Green_Day_Adult_T_Shirt_Dookie_Tracklist.jpg?v=1686927028"
     },
     {
         "id": 3,
-        "nombre": "remera mujer 1",
-        "description": "remera mujer XL",
+        "nombre": "Remera mujer 1",
+        "description": "Remera mujer XL",
         "stock": true,
-        "price": 5000
+        "price": 5000,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnDe3P3bZam0hRmRrFcw7Ez9eO0HZvWpotpw&s"
     },
     {
         "id": 4,
-        "nombre": "remera mujer 2",
-        "description": "remera mujer XXL",
+        "nombre": "Remera mujer 2",
+        "description": "Remera mujer XXL",
         "stock": true,
-        "price": 5500
+        "price": 5500,
+        "img": "https://www.metal-shop.eu/images/produkty/thumb2/130694_as013.JPG"
     },
     {
         "id": 5,
-        "nombre": "poster",
-        "description": "poster de pared",
+        "nombre": "Poster",
+        "description": "Poster de pared",
         "stock": true,
-        "price": 3000
+        "price": 3000,
+        "img": "https://mir-s3-cdn-cf.behance.net/project_modules/source/c9a127161006729.63be2c9b8c975.jpg"
     },
     {
         "id": 6,
-        "nombre": "mochila",
-        "description": "mochila de cuero",
+        "nombre": "Mochila",
+        "description": "Mochila de cuero",
         "stock": false,
-        "price": 4000
+        "price": 4000,
+        "img": "https://rockabilia.com/cdn/shop/files/429084F_1024x1024.jpg?v=1726603679"
     }
 ]
