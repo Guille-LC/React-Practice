@@ -1,20 +1,17 @@
 import { Card } from 'primereact/card';
 import { ItemCount } from './ItemCount';
-import '../styles/products.css';
-import '../styles/cardimg.css';
+import '../styles/flexcard.css';
+import '../styles/productslist.css';
 import products from '../assets/products.json'
 
 const Products = () => (
-    <div className='flexlist'>
+    <div className='productslist'>
         {products.map((prod) => (
-            <Card key={prod.id} title={prod.title} className='card'>
-
-                <img src={prod.img} alt="Sweet Merch" className='card-img' />
+            <Card key={prod.id} title={prod.title} className='flexcard'>
+                <img src={prod.img} alt={prod.nombre} className='card-img' />
                 <p>{prod.description}</p>
                 <strong>${prod.price}</strong>
-
                 <ItemCount />
-
             </Card>
         ))}
     </div>
