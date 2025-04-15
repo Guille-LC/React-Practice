@@ -3,6 +3,7 @@
         "id": 1,
         "nombre": "Remera hombre 1",
         "description": "Remera hombre XL",
+        "detail": "Llevá con vos la energía cruda de Saviors, el nuevo capítulo de Green Day. Esta remera presenta un diseño inspirado en el arte del álbum, con un estilo rebelde, colores intensos y actitud punk. Ideal para fans que siguen creyendo en el poder del rock con mensaje. Hecha con algodón suave, cómoda para el pogo o para el día a día.",
         "stock": true,
         "price": 5000,
         "img": "https://http2.mlstatic.com/D_NQ_NP_699190-MLA73372730264_122023-O.webp"
@@ -11,6 +12,7 @@
         "id": 2,
         "nombre": "Remera hombre 2",
         "description": "Remera hombre XXL",
+        "detail": "Revive los orígenes del punk con esta remera inspirada en Kerplunk, el icónico álbum de Green Day. Con un diseño que captura la esencia cruda y energética de los primeros días de la banda, esta prenda es ideal para los fanáticos que viven el espíritu del punk de los 90. Con un ajuste cómodo y tela suave, es perfecta para mostrar tu amor por el punk auténtico, ya sea en conciertos o en tu día a día.",
         "stock": true,
         "price": 5500,
         "img": "https://www.kidvicious.co.uk/cdn/shop/files/Green_Day_Adult_T_Shirt_Dookie_Tracklist.jpg?v=1686927028"
@@ -19,6 +21,7 @@
         "id": 3,
         "nombre": "Remera mujer 1",
         "description": "Remera mujer XL",
+        "detail": "Con esta remera de 21st Century Breakdown, lleva la energía de uno de los álbumes más representativos de Green Day. Su diseño único refleja el espíritu rebelde y crítico de la banda ante la sociedad moderna. Hecha especialmente para mujeres que no temen expresarse, esta prenda combina estilo y actitud, con una tela suave y un corte cómodo que te permite destacar en cualquier ocasión. Perfecta para quienes abrazan la música como forma de lucha y reflexión en este siglo.",
         "stock": true,
         "price": 5000,
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnDe3P3bZam0hRmRrFcw7Ez9eO0HZvWpotpw&s"
@@ -27,6 +30,7 @@
         "id": 4,
         "nombre": "Remera mujer 2",
         "description": "Remera mujer XXL",
+        "detail": "¡Rompe las reglas con estilo! Esta remera de mujer inspirada en American Idiot es perfecta para las que defienden la rebeldía y la libertad de expresión. Con el icónico logo del álbum, el diseño captura la esencia punk y provocadora de Green Day, transmitiendo un mensaje de crítica social y desobediencia. Hecha de algodón suave y con un corte que se adapta perfectamente a tu figura, es la elección ideal para quienes quieren llevar el espíritu de American Idiot a todas partes. ¡Que la música hable y que el mundo te escuche!",
         "stock": true,
         "price": 5500,
         "img": "https://www.metal-shop.eu/images/produkty/thumb2/130694_as013.JPG"
@@ -35,6 +39,7 @@
         "id": 5,
         "nombre": "Poster",
         "description": "Poster de pared",
+        "detail": "¡Revive el sonido explosivo de Green Day con este póster único al estilo Dookie! Con un diseño vibrante y cargado de energía, esta pieza captura la esencia de los años 90 mientras rinde homenaje a la banda en su etapa más rebelde. Con un toque especial de Argentina, este póster fusiona la actitud punk de Green Day con el espíritu local, creando una obra de arte que te transportará a los días de Dookie. Ideal para coleccionistas, fans y cualquiera que quiera añadir un toque de rock a su pared. ¡Un must para todo amante del punk!",
         "stock": true,
         "price": 3000,
         "img": "https://mir-s3-cdn-cf.behance.net/project_modules/source/c9a127161006729.63be2c9b8c975.jpg"
@@ -43,6 +48,7 @@
         "id": 6,
         "nombre": "Mochila",
         "description": "Mochila de cuero",
+        "detail": "Lleva contigo el espíritu rebelde de American Idiot con esta mochila de cuero única. Con un diseño sofisticado y audaz, presenta el icónico logo del álbum, fusionando el estilo punk con un toque de elegancia. Hecha con cuero de alta calidad, esta mochila ofrece durabilidad y estilo, perfecta para aquellos que buscan destacar su amor por Green Day mientras mantienen un look moderno y práctico. Con compartimentos amplios y un ajuste cómodo, es ideal para el día a día, conciertos o cualquier ocasión en la que quieras llevar un pedazo de American Idiot contigo.",
         "stock": false,
         "price": 4000,
         "img": "https://rockabilia.com/cdn/shop/files/429084F_1024x1024.jpg?v=1726603679"

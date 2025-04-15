@@ -3,22 +3,27 @@ import './components/ItemCount'
 import './components/Navbar'
 import { Catalogo } from './components/Catalogo'
 import { Navbar } from './components/Navbar'
-import Greeting from './components/Greeting'
+import ItemDetail from './components/ItemDetail'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import NotFound from './components/NotFound'
+import { Link } from 'react-router-dom';
 
 
 function App() {
   return (
     <BrowserRouter>
-      <div className='head'>
-        <img src="../img/pngfind.com-green-day-logo-png-6068960.png" alt="Sweet Merch" className='logo'/>
-        <h1>SWEET MERCH</h1>
-      </div>
-        <Navbar />
-          <Greeting greeting="¡Bienvenido a la tienda de Sweet Merch!"/>
-        <Routes>
-          <Route path='/' element={<Catalogo />}/>
-        </Routes>
+      <Link to="/">
+        <div className='head'>
+            <img src="../img/pngfind.com-green-day-logo-png-6068960.png" alt="Sweet Merch" className='logo'/>
+            <h1>SWEET MERCH</h1>
+          </div>
+      </Link>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Catalogo />}/>
+        <Route path='/detalle/:id' element={<ItemDetail />}/>
+        <Route path="*" element={<NotFound/ >}/>
+      </Routes>
     </BrowserRouter>
   )
 }

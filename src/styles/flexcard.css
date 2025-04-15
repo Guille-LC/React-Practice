@@ -1,4 +1,8 @@
 .flexcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
     width: 400px;
     height: 450px;
     border-radius: 5px;
@@ -7,7 +11,6 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-
 }
 
 .flexcard:hover{

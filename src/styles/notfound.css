@@ -1,0 +1,17 @@
+.notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.four {
+    font-size: 2.2rem;
+}
+
+.fourimg{
+    width: auto;
+    height: auto;
+}
