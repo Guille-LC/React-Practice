@@ -3,7 +3,7 @@ import products from '../assets/products.json';
 import '../styles/flexdetail.css';
 import { ItemCount } from './ItemCount';
 
-const ItemDetail = () => {
+const ItemDetailContainer = () => {
     const { id } = useParams();
     const product = products.find(p => p.id.toString() === id);
     return (
@@ -19,4 +19,4 @@ const ItemDetail = () => {
     )
 }
 
-export default ItemDetail
+export default ItemDetailContainer

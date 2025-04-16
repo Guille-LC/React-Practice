@@ -3,10 +3,11 @@ import './components/ItemCount'
 import './components/Navbar'
 import { Catalogo } from './components/Catalogo'
 import { Navbar } from './components/Navbar'
-import ItemDetail from './components/ItemDetail'
+import ItemDetailContainer from './components/ItemDetailContainer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NotFound from './components/NotFound'
 import { Link } from 'react-router-dom';
+import Carrito from './components/Carrito'
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
       </Link>
       <Navbar />
       <Routes>
+        <Route path="/carrito" element={<Carrito />} /> 
         <Route path='/' element={<Catalogo />}/>
-        <Route path='/detalle/:id' element={<ItemDetail />}/>
+        <Route path='/detalle/:id' element={<ItemDetailContainer />}/>
         <Route path="*" element={<NotFound/ >}/>
       </Routes>
     </BrowserRouter>

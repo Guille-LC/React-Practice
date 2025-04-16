@@ -1,7 +1,8 @@
 import { AppstoreOutlined, SettingOutlined, MenuOutlined, UserOutlined, WomanOutlined, StarOutlined, FilePptOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 import CartWidget from './CartWidget';
-import '../styles/navbar.css'
+import '../styles/navbar.css';
+import { Link } from 'react-router-dom';
 
 const items = [
     {                            //Navigation 1
@@ -103,14 +104,11 @@ const onClick = e => console.log('click', e);
 
 export const Navbar = () => {
     return (
-        <div className='navbar'>
-            <Menu
-            onClick={onClick}
-            style={{width: 256,}}
-            mode="horizontal"
-            items={items}
-            />
-            <CartWidget />
+        <div className='navbar'> 
+            <Menu onClick={onClick} style={{width: 256,}} mode="horizontal" items={items} />
+            <Link to={'/carrito'}>
+                <CartWidget />
+            </Link>
         </div>
     )
 }

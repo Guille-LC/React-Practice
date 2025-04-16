@@ -10,6 +10,7 @@ body {
 }
 
 .head {
+    text-decoration: none !important;
     display: flex;
     gap: 50px;
     font-size: 4rem;
@@ -17,6 +18,7 @@ body {
     justify-content: center;
     font-family: "punk-rock";
     letter-spacing: 4px;
+    color: white;
 }
 
 .logo {
