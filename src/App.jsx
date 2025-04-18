@@ -7,7 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NotFound from './components/NotFound'
 import { Link } from 'react-router-dom';
-import Carrito from './components/Carrito'
+import Carrito from './components/Carrito';
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       </Link>
       <Navbar />
       <Routes>
-        <Route path="/carrito" element={<Carrito />} /> 
+        <Route path="/carrito" element={<Carrito />} />
         <Route path='/' element={<Catalogo />}/>
         <Route path='/detalle/:id' element={<ItemDetailContainer />}/>
         <Route path="*" element={<NotFound/ >}/>
