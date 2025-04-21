@@ -3,6 +3,7 @@ import '../styles/flexcard.css';
 import '../styles/productslist.css';
 import products from '../assets/products.json';
 import { Link } from 'react-router-dom';
+import { Button } from "antd";
 
 const Products = () => (
     <div className='productslist'>
@@ -12,7 +13,7 @@ const Products = () => (
                 <p>{prod.description}</p>
                 <strong>${prod.price}</strong>
                 <Link to={`/detalle/${prod.id}`}>
-                    <button>Detalles</button>
+                    <Button type="primary">Detalles</Button>
                 </Link>
             </Card>
         ))}

@@ -1,11 +1,12 @@
-import { useState } from "react"
+import { useState } from "react";
+import { Button } from "antd";
 
 export const ItemCount = () => {
     const [contador,setContador] = useState(0)
 
     return (
         <div>
-            <button onClick={() => setContador(contador+1)}>Agregar al carrito</button>
+            <Button color="cyan" variant="solid" onClick={() => setContador(contador+1)}>Agregar al carrito</Button>
         </div>
     )
 }

@@ -1,0 +1,17 @@
+.shopcart {
+    font-size: 30px;
+    color: aliceblue;
+    width: 90px;
+    height: 40px;
+    border-style: double;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.shopcart:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(63, 221, 0);
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}

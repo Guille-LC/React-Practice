@@ -52,5 +52,32 @@
         "stock": false,
         "price": 4000,
         "img": "https://rockabilia.com/cdn/shop/files/429084F_1024x1024.jpg?v=1726603679"
+    },
+    {
+        "id": 7,
+        "nombre": "Pantalon",
+        "description": "Pantalon unisex",
+        "detail": "Con actitud punk y diseño urbano, estos pantalones inspirados en American Idiot llevan la rebeldía de Green Day directo a tu outfit. Con detalles sutiles como parches, costuras contrastantes y el logo del álbum en una pierna, combinan estilo alternativo con comodidad. Fabricados con materiales resistentes y elásticos, son ideales para moverte con libertad, ya sea en la calle, en un recital o donde haga falta marcar diferencia. Porque ser un American Idiot también es una forma de pensar.",
+        "stock": true,
+        "price": 7000,
+        "img": "https://store.greenday.com/cdn/shop/files/3Flannel_Pants_1445x.png?v=1729189941"
+    },
+    {
+        "id": 8,
+        "nombre": "Buzo",
+        "description": "Buzo unisex",
+        "detail": "Este buzo es más que abrigo: es una declaración de fanatismo. Con una foto emblemática de Green Day al frente, captura la esencia cruda y enérgica de la banda en su mejor momento. Hecho con algodón suave por dentro y una textura resistente por fuera, es ideal para usar en cualquier época del año. Corte relajado, estilo atemporal y pura actitud punk. Un imprescindible para quienes viven y sienten la música.",
+        "stock": true,
+        "price": 9000,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_943688-MLA76357015540_052024-O.webp"
+    },
+    {
+        "id": 9,
+        "nombre": "Gorra",
+        "description": "Gorra Dookie",
+        "detail": "Canalizá la energía noventera de Green Day con esta gorra inspirada en Dookie, el álbum que lo cambió todo. Con un diseño bordado que homenajea el arte caótico y explosivo del disco, esta gorra combina actitud punk con estilo urbano. Ajustable, cómoda y lista para acompañarte a todos lados, es el accesorio perfecto para fans que quieren llevar el espíritu de Dookie en la frente. ¡Pura nostalgia, puro rock!",
+        "stock": true,
+        "price": 2300,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_766183-MLA78932815914_092024-O.webp"
     }
 ]
