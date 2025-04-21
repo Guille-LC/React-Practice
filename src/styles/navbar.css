@@ -4,4 +4,10 @@
     align-items: center;
     gap: 60px;
     text-decoration: none;
+    border-style:groove;
+    border-color: rgb(63, 221, 0);
+    border-radius: 10px;
+    height: 70px;
+    width: 1400px;
+    margin: 0 auto;
 }

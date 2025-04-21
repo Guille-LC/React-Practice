@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NotFound from './components/NotFound'
 import { Link } from 'react-router-dom';
 import Carrito from './components/Carrito';
+import { Footer } from './components/Footer'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='/detalle/:id' element={<ItemDetailContainer />}/>
         <Route path="*" element={<NotFound/ >}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
