@@ -9,26 +9,46 @@ import NotFound from './components/NotFound'
 import { Link } from 'react-router-dom';
 import Carrito from './components/Carrito';
 import { Footer } from './components/Footer'
-
+import {ShopCartProvider} from './components/context/ShopCartContext'
+import { useState } from 'react'
+import { useEffect } from 'react'
+import Loading from './components/Loading'
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  })
+
+  if (loading) {
+    return <Loading />
+  }
+
   return (
-    <BrowserRouter>
-      <Link to="/">
-        <div className='head'>
-            <img src="../img/pngfind.com-green-day-logo-png-6068960.png" alt="Sweet Merch" className='logo'/>
-            <h1>SWEET MERCH</h1>
-          </div>
-      </Link>
-      <Navbar />
-      <Routes>
-        <Route path="/carrito" element={<Carrito />} />
-        <Route path='/' element={<Catalogo />}/>
-        <Route path='/detalle/:id' element={<ItemDetailContainer />}/>
-        <Route path="*" element={<NotFound/ >}/>
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <>
+      <ShopCartProvider>
+        <BrowserRouter>
+          <Link to="/">
+            <div className='head'>
+              <img src="../img/pngfind.com-green-day-logo-png-6068960.png" alt="Sweet Merch" className='logo'/>
+              <h1>SWEET MERCH</h1>
+            </div>
+          </Link>
+          <Navbar />
+          <Routes>
+            <Route path="/carrito" element={<Carrito />} />
+            <Route path='/' element={<Catalogo />}/>
+            <Route path='/detalle/:id' element={<ItemDetailContainer />}/>
+            <Route path="*" element={<NotFound/ >}/>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </ShopCartProvider>
+    </>
   )
 }
 

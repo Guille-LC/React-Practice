@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { CartContext } from "./context/ShopCartContext";
 import { Button } from "antd";
+import { useContext } from 'react';
 
-export const ItemCount = () => {
-    const [contador,setContador] = useState(0)
-    console.log(contador);
+export const ItemCount = ({product}) => {
+
+    const { cart, setCart } = useContext(CartContext);
+
+    const addToCart = () => {
+        setCart([...cart,product]);
+    };
+
     return (
         <div>
-            <Button color="cyan" variant="solid" onClick={() => setContador(contador+1)}>Agregar al carrito</Button>
+            <Button color="cyan" variant="solid" onClick={addToCart}>Agregar al carrito</Button>
         </div>
     )
 }

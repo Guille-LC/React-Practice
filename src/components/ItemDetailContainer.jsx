@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
                 <img src={product.img} alt={product.description} className='card-img' />
                 <p>{product.detail}</p>
                 <strong>${product.price}</strong>
-                <ItemCount/ >
+                <ItemCount product={product}/ >
             </div>
         </>
     )
