@@ -1,0 +1,11 @@
+.carritocontainer {
+    margin: 0 auto;
+}
+
+.carritodecompra {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
