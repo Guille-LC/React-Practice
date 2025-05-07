@@ -18,9 +18,8 @@ const Carrito = () => {
                 <div className='carritodecompra'>
                     {cart.map((product) => {
                         return(
-                            <Card /* hoverable */ style={{ width: 230 }} cover={<img alt={product.nombre} src={product.img} />} >
+                            <Card style={{ width: 230 }} cover={<img alt={product.nombre} src={product.img} />} >
                                 <Meta title={product.description} description={`$ ${product.price}`} />
-
                             </Card>
                         )
                     })}
@@ -35,7 +34,6 @@ const Carrito = () => {
                 <strong><Link to="/">Volver a la pagina de inicio</Link></strong>
             </div>
         )
-        
     }
 }
 

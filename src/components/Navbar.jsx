@@ -1,11 +1,11 @@
-import { AppstoreOutlined, SettingOutlined, MenuOutlined, UserOutlined, WomanOutlined, StarOutlined, FilePptOutlined } from '@ant-design/icons';
+import { MenuOutlined, UserOutlined, WomanOutlined, StarOutlined, FilePptOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 import CartWidget from './CartWidget';
 import '../styles/navbar.css';
 import { Link } from 'react-router-dom';
 
 const items = [
-    {                            //Navigation 1
+    {
         key: 'sub1',
         icon: <MenuOutlined />,
         label: 'Menu',
@@ -45,59 +45,7 @@ const items = [
                 ],
             },
         ],
-    },
-    {                      //Navigation 2
-        key: 'sub2',
-        icon: <AppstoreOutlined />,
-        label: 'Navigation Two',
-        children: [
-            {
-                key: '5',
-                label: 'Option 5',
-            },
-            {
-                key: '6',
-                label: 'Option 6',
-            },
-            {              //SubMenu
-                key: 'sub3',
-                label: 'Submenu',
-                children: [
-                    {
-                        key: '7',
-                        label: 'Option 7',
-                    },
-                    {
-                        key: '8',
-                        label: 'Option 8',
-                    },
-                ],
-            },
-        ],
-    },
-    {                       //Navigation 3
-        key: 'sub4',
-        label: 'Navigation Three',
-        icon: <SettingOutlined />,
-        children: [
-            {
-                key: '9',
-                label: 'Option 9',
-            },
-            {
-                key: '10',
-                label: 'Option 10',
-            },
-            {
-                key: '11',
-                label: 'Option 11',
-            },
-            {
-                key: '12',
-                label: 'Option 12',
-            },
-        ],
-    },
+    }
 ];
 
 const onClick = e => console.log('click', e);

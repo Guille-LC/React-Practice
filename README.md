@@ -1,12 +1,55 @@
-# React + Vite
+# 🛒 Sweet Merch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Sweet Merch** es una aplicación de e-commerce desarrollada en React. Está pensada como una tienda para fans de Green Day, donde se pueden explorar productos, agregarlos al carrito y gestionar una compra básica.
 
-Currently, two official plugins are available:
+## Librerias utilizadas
+- [AntDesign](https://ant.design/) 
+- [PrimeReact](https://primereact.org/installation/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React
+- React Router
+- Context API (para el carrito de compras)
+- Ant Design (para componentes UI)
+- Vite (como bundler)
+- JSON local para simular productos
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Funcionalidades principales
+
+- Vista de catálogo con productos cargados desde un JSON.
+- Detalle individual de cada producto.
+- Agregado de productos al carrito con botón personalizado.
+- Visualización de productos en el carrito.
+- Persistencia de estado del carrito usando Context.
+- Contador en el ícono del carrito que se actualiza dinámicamente.
+- Estilos personalizados + componentes de Ant Design y PrimeReact.
+
+## 📁 Estructura del proyecto (simplificada)
+
+src/  
+├── assets/  
+│ └── products.json # Lista de productos  
+├── components/  
+│ ├── CartWidget.jsx # Ícono de carrito con contador  
+│ ├── ItemCount.jsx # Botón de "Agregar al carrito"  
+│ ├── ItemDetailContainer.jsx  
+│ ├── Catalogo.jsx  
+│ ├── Carrito.jsx # Página de carrito  
+│ ├── Navbar.jsx  
+│ └── context/  
+│ └── ShopCartContext.jsx # Contexto del carrito  
+├── styles/ # CSS personalizados  
+├── App.jsx  
+└── main.jsx  
+
+__Para correr la aplicacion, escribir en terminal:__
+```
+npm run dev
+```
+
+Trabajo realizado por: Guillermo Laviero Correia
+[Correo Electronico](guillermo96lc@hotmail.com)  
+[Linkedin](https://www.linkedin.com/in/guillermolavierocorreia/)  
+[Instagram](https://www.instagram.com/guille_laviero)  
+[Linktree](https://linktr.ee/guillermolc)  

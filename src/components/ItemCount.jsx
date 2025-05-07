@@ -9,9 +9,10 @@ export const ItemCount = ({product}) => {
 
     const addToCart = () => {
         setCart([...cart, product]);
-        console.log("Producto agregado al carrito!");
     };
 
+    console.log(cart.length);
+    
     return (
         <div>
             <Button type="primary" onClick={addToCart}>Agregar al carrito</Button>

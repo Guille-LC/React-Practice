@@ -8,11 +8,13 @@ const ItemDetailContainer = () => {
     const product = products.find(p => p.id.toString() === id);
     return (
         <>
+            <h2 className='itemnombre'>{product.nombre}</h2>
             <div className='flexdetail'>
-                <h2>{product.nombre}</h2>
                 <img src={product.img} alt={product.description} className='card-img' />
                 <p>{product.detail}</p>
-                <strong>${product.price}</strong>
+            </div>
+            <div className='price'>
+                <strong className='strongprice'>${product.price}</strong>
                 <ItemCount product={product}/ >
             </div>
         </>
