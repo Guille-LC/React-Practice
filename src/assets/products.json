@@ -5,7 +5,7 @@
         "description": "Remera hombre XL",
         "categoria": "ropa hombre",
         "detail": "Llevá con vos la energía cruda de Saviors, el nuevo capítulo de Green Day. Esta remera presenta un diseño inspirado en el arte del álbum, con un estilo rebelde, colores intensos y actitud punk. Ideal para fans que siguen creyendo en el poder del rock con mensaje. Hecha con algodón suave, cómoda para el pogo o para el día a día.",
-        "stock": true,
+        "stock": 5,
         "price": 5000,
         "img": "https://http2.mlstatic.com/D_NQ_NP_699190-MLA73372730264_122023-O.webp"
     },

@@ -13,6 +13,7 @@ import {ShopCartProvider} from './components/context/ShopCartContext'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import Loading from './components/Loading'
+import Finalizar from './components/Finalizar'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/carrito" element={<Carrito />} />
+            <Route path='/finalizar' element={<Finalizar />} />
             <Route path='/' element={<Catalogo />}/>
             <Route path='/detalle/:id' element={<ItemDetailContainer />}/>
             <Route path="*" element={<NotFound/ >}/>

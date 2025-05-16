@@ -1,21 +1,40 @@
 import { useParams } from 'react-router-dom';
-import products from '../assets/products.json';
 import '../styles/flexdetail.css';
 import { ItemCount } from './ItemCount';
+import { getProducts } from '../productsService';
+import { useEffect, useState } from 'react';
+import Loading from './Loading';
 
 const ItemDetailContainer = () => {
+
     const { id } = useParams();
-    const product = products.find(p => p.id.toString() === id);
+
+    const [product, setProduct] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        getProducts()
+            .then((products) => {
+            const foundProduct = products.find(p => p.id === id);
+            setProduct(foundProduct);
+        })
+        .catch((err) => console.error("Error al obtener producto:", err))
+        .finally(() => setLoading(false));
+    }, [id]);
+
+    if (loading) return <Loading />;
+    if (!product) return <p>Producto no encontrado</p>;
+
     return (
         <>
             <h2 className='itemnombre'>{product.nombre}</h2>
             <div className='flexdetail'>
                 <img src={product.img} alt={product.description} className='card-img' />
-                <p>{product.detail}</p>
+                <p>{product.detalle}</p>
             </div>
             <div className='price'>
                 <strong className='strongprice'>${product.price}</strong>
-                <ItemCount product={product}/ >
+                <ItemCount product={product} />
             </div>
         </>
     )

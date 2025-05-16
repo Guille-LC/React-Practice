@@ -4,6 +4,7 @@ import { Card } from "antd";
 import { Link } from 'react-router-dom';
 import '../styles/emptycart.css';
 import '../styles/carritodecompra.css';
+import { Button } from "antd";
 
 const { Meta } = Card;
 
@@ -23,6 +24,12 @@ const Carrito = () => {
                             </Card>
                         )
                     })}
+                    
+                </div>
+                <div className='final'>
+                    <Link to={'/finalizar'}>
+                        <Button type="primary">Finalizar compra</Button>
+                    </Link>
                 </div>
             </div>
         )
