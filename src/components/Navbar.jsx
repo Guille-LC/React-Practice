@@ -4,7 +4,9 @@ import CartWidget from './CartWidget';
 import '../styles/navbar.css';
 import { Link } from 'react-router-dom';
 
-const items = [
+export const Navbar = () => {
+
+    const items = [
     {
         key: 'sub1',
         icon: <MenuOutlined />,
@@ -12,18 +14,18 @@ const items = [
         children: [
             {
                 key: '1-1',
-                label: 'Remeras',
+                label: 'Ropa',
                 type: 'group',
                 children: [
                     {
                         key: '1',
                         icon: <UserOutlined />,
-                        label: 'Hombre',
+                        label: <Link to={"/categoria/hombre}"}>Hombre</Link>,
                     },
                     {
                         key: '2',
                         icon: <WomanOutlined />,
-                        label: 'Mujer',
+                        label: <Link to={"/categoria/mujer"}>Mujer</Link>,
                     },
                 ],
             },
@@ -35,12 +37,12 @@ const items = [
                     {
                         key: '3',
                         icon: <StarOutlined />,
-                        label: 'Accesorios',
+                        label: <Link to={"/categoria/accesorios"}>Accesorios</Link>,
                     },
                     {
                         key: '4',
                         icon: <FilePptOutlined />,
-                        label: 'Posters',
+                        label: <Link to={"/categoria/posters"}>Posters</Link>,
                     },
                 ],
             },
@@ -48,12 +50,9 @@ const items = [
     }
 ];
 
-const onClick = e => console.log('click', e);
-
-export const Navbar = () => {
     return (
         <div className='navbar'> 
-            <Menu onClick={onClick} style={{width: 256,}} mode="horizontal" items={items} />
+            <Menu style={{width: 256,}} mode="horizontal" items={items} />
             <Link to={'/carrito'}>
                 <CartWidget />
             </Link>

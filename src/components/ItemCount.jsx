@@ -13,8 +13,8 @@ export const ItemCount = ({product}) => {
 
     const sumar = () => {
         if (contador < product.stock) {
-                setContador(contador+1)
-            }
+            setContador(contador+1)
+        }
     }
 
     const restar = () => {
@@ -27,7 +27,7 @@ export const ItemCount = ({product}) => {
     const addToCart = () => {
         if (contador == 0) {
             Toastify({
-            text: "¡Tu carrito esta vacio!",
+            text: "¡No seleccionaste cantidad!",
             duration: 2500,
             style: {
             background: "linear-gradient(to right,rgb(176, 0, 0),rgb(102, 0, 0))",
@@ -38,9 +38,7 @@ export const ItemCount = ({product}) => {
             Toastify({
             text: "¡Agregado al carrito!",
             duration: 2500,
-            style: {
-            background: "linear-gradient(to right, #00b09b, #96c93d)",
-            }
+            style: {background: "linear-gradient(to right, #00b09b, #96c93d)",}
             }).showToast();
             setContador(0);
         }

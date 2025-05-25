@@ -34,6 +34,7 @@ src/
 │ ├── CartWidget.jsx # Ícono de carrito con contador  
 │ ├── ItemCount.jsx # Botón de "Agregar al carrito"  
 │ ├── ItemDetailContainer.jsx  
+│ ├── Finalizar.jsx # Pagina para registrar y finalizar la compra
 │ ├── Catalogo.jsx  
 │ ├── Carrito.jsx # Página de carrito  
 │ ├── Navbar.jsx  
@@ -49,7 +50,7 @@ npm run dev
 ```
 
 Trabajo realizado por: Guillermo Laviero Correia
-[Correo Electronico](guillermo96lc@hotmail.com)  
+[guillermo96lc@hotmail.com](guillermo96lc@hotmail.com)  
 [Linkedin](https://www.linkedin.com/in/guillermolavierocorreia/)  
 [Instagram](https://www.instagram.com/guille_laviero)  
 [Linktree](https://linktr.ee/guillermolc)  
