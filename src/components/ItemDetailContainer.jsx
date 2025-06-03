@@ -29,7 +29,7 @@ const ItemDetailContainer = () => {
         <>
             <h2 className='itemnombre'>{product.nombre}</h2>
             <div className='flexdetail'>
-                <img src={product.img} alt={product.description} className='card-img' />
+                <img src={product.foto} alt={product.description} className='card-img' />
                 <p>{product.detalle}</p>
             </div>
             <div className='price'>

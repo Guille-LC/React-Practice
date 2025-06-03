@@ -14,6 +14,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import Loading from './components/Loading'
 import Finalizar from './components/Finalizar'
+import Products from './components/Products'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ function App() {
             <Route path='/finalizar' element={<Finalizar />} />
             <Route path='/' element={<Catalogo />}/>
             <Route path='/detalle/:id' element={<ItemDetailContainer />}/>
+            <Route path="/categoria/:categoria" element={<Products />} />
             <Route path="*" element={<NotFound/ >}/>
           </Routes>
           <Footer />

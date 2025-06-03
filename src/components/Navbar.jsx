@@ -20,7 +20,7 @@ export const Navbar = () => {
                     {
                         key: '1',
                         icon: <UserOutlined />,
-                        label: <Link to={"/categoria/hombre}"}>Hombre</Link>,
+                        label: <Link to={"/categoria/hombre"}>Hombre</Link>,
                     },
                     {
                         key: '2',
