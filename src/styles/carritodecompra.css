@@ -10,6 +10,13 @@
     align-items: center;
 }
 
+.total {
+    font-size: 2rem;
+    margin: auto 0;
+    width: 300px;
+    background-color: yellowgreen;
+}
+
 .final {
     margin: 0 auto;
     font-size: 1.5rem;

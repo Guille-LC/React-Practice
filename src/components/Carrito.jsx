@@ -12,6 +12,8 @@ const Carrito = () => {
 
     const {cart} = useContext(CartContext);
 
+    const totalFinal = cart.reduce((acc, prod) => acc + prod.price * prod.cantidad, 0);
+
     if(cart.length > 0) {
         return (
             <div className='carritocontainer'>
@@ -21,11 +23,16 @@ const Carrito = () => {
                         return(
                             <Card style={{ width: 230 }} cover={<img alt={product.nombre} src={product.img} />} >
                                 <Meta title={product.description} description={`$ ${product.price}`} />
+                                <p><strong>Cantidad:</strong> {product.cantidad}</p>
+                                <p>Subtotal: <strong>{product.price * product.cantidad}</strong></p>
                             </Card>
                         )
                     })}
                     
                 </div>
+                <Card className='total' title="Total Final: " variant="borderless">
+                    {totalFinal} $
+                </Card>
                 <div className='final'>
                     <Link to={'/finalizar'}>
                         <Button type="primary">Finalizar compra</Button>

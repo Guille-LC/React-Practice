@@ -1,10 +1,21 @@
 import '../styles/formulario.css'
+import {CartContext} from './context/ShopCartContext';
+import { useContext } from 'react';
 
 const Finalizar = () => {
+    const { cart, getTotal } = useContext(CartContext);
     return (
         <>
             <form className="formulario">
                 <h2>Finalizar Compra</h2>
+                <ul>
+                {cart.map((item) => (
+                    <li key={item.id}>
+                        {item.nombre} x {item.cantidad} = ${item.price * item.cantidad}
+                    </li>
+                ))}
+            </ul>
+            <h3>Total Final: ${getTotal()}</h3>
                 <div class="mb-3" className='inputs'>
                     <div>
                         <label for="nombre">Nombre:</label>
@@ -27,7 +38,7 @@ const Finalizar = () => {
                         <input type="text" id="ciudad" name="ciudad" required></input>
                     </div>
                 </div>
-                <button id="submitButton" type="submit">Enviar</button>
+                <button id="submitButton" type="submit">Finalizar</button>
             </form>
         </>
     )
