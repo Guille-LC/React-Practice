@@ -9,7 +9,7 @@ import NotFound from './components/NotFound'
 import { Link } from 'react-router-dom';
 import Carrito from './components/Carrito';
 import { Footer } from './components/Footer'
-import {ShopCartProvider} from './components/context/ShopCartContext'
+import {ShopCartProvider} from './context/ShopCartContext'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import Loading from './components/Loading'

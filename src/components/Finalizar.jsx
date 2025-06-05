@@ -1,5 +1,5 @@
 import '../styles/formulario.css'
-import {CartContext} from './context/ShopCartContext';
+import {CartContext} from '../context/ShopCartContext';
 import { useContext } from 'react';
 
 const Finalizar = () => {

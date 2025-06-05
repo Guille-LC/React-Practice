@@ -1,4 +1,4 @@
-import { CartContext } from "./context/ShopCartContext";
+import { CartContext } from "../context/ShopCartContext";
 import { Button } from "antd";
 import { useContext } from 'react';
 import { useState } from "react"

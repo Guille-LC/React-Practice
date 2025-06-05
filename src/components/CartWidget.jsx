@@ -1,7 +1,7 @@
 import {ShoppingCartOutlined} from '@ant-design/icons';
 import '../styles/shopcart.css';
 import { useContext } from 'react';
-import {CartContext} from './context/ShopCartContext'
+import {CartContext} from '../context/ShopCartContext'
 
 const CartWidget = () => {
 
